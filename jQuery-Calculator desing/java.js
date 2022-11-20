@@ -1,0 +1,43 @@
+// function insertNumber(number){
+//    var existingNumbers =  $('#result').val()
+//    $('#result').val(existingNumbers + number)
+// }
+
+// function clearResult(){
+//    $('#result').val('')
+// }
+
+// function calculate(){
+//    var result = eval($('#result').val())
+//    $('#result').val(result)
+// }
+
+// function deleteNumber(){
+//    var presentValue = $('#result').val()
+//    if(presentValue!=''){
+//       $('#result').val(presentValue.slice(0,-1))
+//    }
+// }
+
+var resultField = $('#result')
+
+function insertNumber(number){
+   var existingNumbers =  resultField.val()
+   resultField.val(existingNumbers + number)
+}
+
+function clearResult(){
+   resultField.val('')
+}
+
+function calculate(){
+   var result = eval(resultField.val())
+   resultField.val(result)
+}
+
+function deleteNumber(){
+   var presentValue = resultField.val()
+   if(presentValue!=''){
+      resultField.val(presentValue.slice(0,-1))
+   }
+}
